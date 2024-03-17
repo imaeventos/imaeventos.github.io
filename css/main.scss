@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Code:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Cabin', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+nav {
+    min-width: 32px;
+
+    .favicon,
+    img {
+        width: 20px;
+    }
+}
+
+main {
+
+    #video-background {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1000;
+        background-size: cover;
+        object-fit: cover; /* Adicionado para melhorar o suporte para navegadores */
+    }
+
+    #video-content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    #inicio {
+        width: 100vw;
+        height: 98%;
+        object-fit: cover;
+        background-attachment: fixed;
+        top: 0;
+        position: fixed;
+        z-index: -999;
+
+
+        h4 {
+            font-family: "Cabin", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            color: #ffffff;
+        }
+    }
+
+    #sobre {
+        margin-top: 88vh;
+        height: max-content;
+        min-width: 320px;
+
+        @media (max-width: 754px) {
+            margin-top: 80vh;
+        }
+
+        img {
+            width: 60px;
+            padding-top: 30px;
+
+            &:hover {
+                width: 50px;
+            }
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+
+        @media (max-width: 754px) {
+            img {
+                width: 40px;
+
+                &:hover {
+                    width: 35px;
+                }
+            }
+        }
+    }
+
+    #portfolio {
+
+
+        p {
+            text-decoration: none;
+            font-family: 'Cabin', Courier, monospace;
+            font-weight: 700;
+            color: #212529;
+        }
+
+        img {
+            height: max-content;
+            width: 100vw;
+
+        }
+
+        .banner {
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
+
+footer {
+
+    #contato {
+        .container {
+            min-width: 320px;
+            width: 30vw;
+        }
+    }
+
+    #redes {
+        min-width: 320px;
+    }
+
+    #redes h5 {
+        margin: auto;
+        font-size: 18px;
+    }
+
+    #redes h6 {
+        margin: auto;
+        font-size: 12px;
+    }
+
+
+    #redes img {
+        height: 45px;
+    }
+
+
+}
